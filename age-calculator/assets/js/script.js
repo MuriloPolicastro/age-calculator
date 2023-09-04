@@ -6,5 +6,5 @@ const monthTxt = document.getElementById('month-txt');
 const yearTxt = document.getElementById('year-txt');
 
 function calcular() {
-    const date = new Date
+    const date = new Date();
 }
