@@ -9,29 +9,37 @@
 </head>
 <body>
     <div class="container">
-        <div class="birthday">
-            <div class="input-item">
-                <label for="day">Day</label>
-                <input type="number" name="day" id="day">
+        <div class="box">
+            <div class="birthday">
+                <div class="input-item">
+                    <label for="day">Day</label>
+                    <input type="number" name="day" id="day" placeholder="DD">
+                </div>
+                <div class="input-item">
+                    <label for="month">Month</label>
+                    <input type="number" name="month" id="month" placeholder="MM">
+                </div>
+                <div class="input-item">
+                    <label for="year">Year</label>
+                    <input type="number" name="year" id="year" placeholder="YYYY">
+                </div>
             </div>
-            <div class="input-item">
-                <label for="day">Month</label>
-                <input type="number" name="day" id="day">
+
+            <div class="line"></div>
+            <input class="button-enviar" type="button" value="&#10148;" onclick="calcular()">
+
+            <div class="date">
+                <div class="date-num">
+                    <p id="year-txt">--</p>
+                    <p id="month-txt">--</p>
+                    <p id="days-txt">--</p>
+                </div>
+                <div class="date-text">
+                    <p>years</p>
+                    <p>months</p>
+                    <p>days</p>
+                </div>
             </div>
-            <div class="input-item">
-                <label for="day">Year</label>
-                <input type="number" name="day" id="day">
-            </div>
-        </div>
-        <div class="date-num">
-            <p>--</p>
-            <p>--</p>
-            <p>--</p>
-        </div>
-        <div class="date-text">
-            <p>years</p>
-            <p>months</p>
-            <p>days</p>
         </div>
     </div>
         

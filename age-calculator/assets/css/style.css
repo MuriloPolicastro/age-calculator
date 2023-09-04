@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@200;400;700&display=swap');
+
+:root {
+    --fonte-padrao: Poppins, sans-serif;;
+    --primary-color: #cecece;
+    --secondy-color: #7307a5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-color: rgb(241, 241, 241);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    width: 60%;
+    max-width: 600px;
+    border-radius: 4%;
+    border-bottom-right-radius: 20%;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.123);
+}
+
+.birthday {
+    display: flex;
+    flex-direction: row;
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 400%;
+}
+
+.input-item {
+    display: flex;
+    flex-direction: column; 
+    padding: 10px;
+    width: 100px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.input-item input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid rgb(202, 202, 202);
+    font-size: 20px;
+    color: #a0a0a0;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.input-item input::placeholder {
+    color: var(--primary-color);
+}
+
+.input-item input:focus {
+    outline: 1px solid var(--secondy-color);
+}
+
+.button-enviar {
+    align-self: flex-end;
+    background-color: var(--secondy-color);
+    color: white;
+    padding: 5px;
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transform: rotate(90deg);
+}
+
+.date-num {
+    color: var(--secondy-color);
+}
+
+.line {
+    position: relative;
+    height: 1.5px;
+    width: 95%;
+    background-color: var(--primary-color);
+    top: 30px;
+}
