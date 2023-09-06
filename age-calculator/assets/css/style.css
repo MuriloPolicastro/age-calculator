@@ -49,13 +49,14 @@ body {
     flex-direction: row;
     font-weight: bold;
     font-size: 400%;
+    max-width: 350px;
 }
 
 .input-item {
     display: flex;
     flex-direction: column; 
     padding: 10px;
-    width: 100px;
+    max-width: 120px;
     color: var(--primary-color);
     text-transform: uppercase;
     font-weight: bold;
@@ -92,6 +93,10 @@ body {
     transform: rotate(90deg);
 }
 
+.button-enviar:hover {
+    cursor: pointer;
+}
+
 .date-num {
     color: var(--secondy-color);
 }
@@ -99,7 +104,16 @@ body {
 .line {
     position: relative;
     height: 1.5px;
-    width: 95%;
+    width: 100%;
     background-color: var(--primary-color);
     top: 30px;
+}
+
+@media (max-width: 700px) {
+    .date {
+        font-size: 330%;
+    }
+    .button-enviar {
+        align-self: center;
+    }
 }
