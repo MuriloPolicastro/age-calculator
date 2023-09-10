@@ -5,6 +5,8 @@ Se mês > 12 = Mês inválido
 Se ano > yearNow = Ano inválido
 Se diffDay > 30 = month++
 Se month === monthNow = month = 11
+
+Se ano 
 */
 
 const dayTxt = document.querySelector('#days-txt');
@@ -38,6 +40,7 @@ function calcular(day, month, year) {
         monthTxt.innerHTML = diffMonth;
     }
 
+    console.log(dateNow)
     yearTxt.innerHTML = diffYear;
 }
 
