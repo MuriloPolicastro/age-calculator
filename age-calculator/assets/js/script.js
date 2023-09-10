@@ -39,9 +39,12 @@ function calcular(day, month, year) {
     } else {
         monthTxt.innerHTML = diffMonth;
     }
+    if (month > monthNow) {
+        diffYear--;
+    }
 
-    console.log(dateNow)
     yearTxt.innerHTML = diffYear;
+    console.log(dateNow)
 }
 
 function executar() {
