@@ -19,6 +19,7 @@ const dayNow = dateNow.getDate();
 const monthNow = dateNow.getMonth();
 const yearNow = dateNow.getFullYear();
 
+/*
 function calcular(day, month, year) {
     let diffDay = (dayNow+30) - day;
     let diffMonth = (monthNow+1) - month;
@@ -45,6 +46,14 @@ function calcular(day, month, year) {
 
     yearTxt.innerHTML = diffYear;
     console.log(dateNow)
+}
+*/
+
+function calcular (day, month, year) {
+    const stringDate = `${year}-${month}-${day}`;
+    const birthDate = new Date(stringDate);
+    const dateNow = new Date();
+
 }
 
 function executar() {
