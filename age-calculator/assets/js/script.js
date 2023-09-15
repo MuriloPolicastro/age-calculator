@@ -48,12 +48,23 @@ function calcular(day, month, year) {
     console.log(dateNow)
 }
 */
+function formatDate (date) {
+    const d = date.getDate();
+    const mo = date.getMonth() + 1;
+    const y = date.getFullYear();
+
+    return `${d}/${mo}/${y}`;
+}
 
 function calcular (day, month, year) {
     const stringDate = `${year}-${month}-${day}`;
     const birthDate = new Date(stringDate);
     const dateNow = new Date();
-
+    const dB = birthDate / 1000 / 60 / 60 / 24 / 30 / 12;
+    const dN = dateNow / 1000 / 60 / 60 / 24 / 30 / 12;
+    const res = dN - dB;
+    
+    window.alert(res);
 }
 
 function executar() {
