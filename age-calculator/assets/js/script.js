@@ -19,7 +19,7 @@ const dayNow = dateNow.getDate();
 const monthNow = dateNow.getMonth();
 const yearNow = dateNow.getFullYear();
 
-/*
+
 function calcular(day, month, year) {
     let diffDay = (dayNow+30) - day;
     let diffMonth = (monthNow+1) - month;
@@ -47,7 +47,7 @@ function calcular(day, month, year) {
     yearTxt.innerHTML = diffYear;
     console.log(dateNow)
 }
-*/
+/*
 function formatDate (date) {
     const d = date.getDate();
     const mo = date.getMonth() + 1;
@@ -66,6 +66,7 @@ function calcular (day, month, year) {
     
     window.alert(res);
 }
+*/
 
 function executar() {
     const day = document.getElementById('day').value;
@@ -75,6 +76,7 @@ function executar() {
     if (day <= 0 || month <= 0 || year <=0) return window.alert ('Data inválida');
     if (day > 31) return window.alert ('Dia inválido');
     if (month > 12) return window.alert ('Mês inválido');
+    if (day > 29 && month == 2) return window.alert ('Fevereiro tem apenas 29 dias');
     if (year > yearNow) {
         window.alert ('Ano inválido');
     } else {
